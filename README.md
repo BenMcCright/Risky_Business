@@ -65,12 +65,29 @@ For each of the above, you will need to:
 #### Resampling Conslusions
 
 * Which model had the best balanced accuracy score?
->
+
+Both the SMOTE oversampling and the SMOTEENN combination(over/under sampling) yielded the highest balanced accuracy scores. The Naieve oversampling method was very close to both the SMOTE and the SMOTEENN methods.
+
+- SMOTE = 0.9948693133232134
+- SMOTEENN = 0.9948693133232134
+- Naive oversampling = 0.9948426324267352
+
 
 * Which model had the best recall score?
->
+
+Naive oversampling, SMOTE, and SMOTEENN all yielded the highest Recall Scores at:
+
+- High Risk = 1.00
+- Low Risk = 0.99
+
 
 * Which model had the best geometric mean score?
-> 
+
+All of the resampling techniques in my analysis yielded the same results in f1 scores:
+
+- High Risk = 0.92
+- Low Risk = 1.00
+- avg / total = 0.99
+
 
 #### Ensemble Learning
